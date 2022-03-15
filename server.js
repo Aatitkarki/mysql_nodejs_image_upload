@@ -7,7 +7,7 @@ const path = require('path')
 
 //use express static folder
 app.use(express.static("./public"))
-
+app.use('/public/images', express.static('images'));
 // body-parser middleware use
 app.use(express.json())
 app.use(express.urlencoded({
